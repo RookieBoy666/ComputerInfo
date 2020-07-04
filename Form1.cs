@@ -1,7 +1,16 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading;
 using System.Windows.Forms;
-
+/// <summary>
+/// 功能描述    ：Form1 
+/// 创 建 者    ：ZJP
+/// 创建日期    ：2020/7/1 10:48:26 
+/// 最后修改者  ：ZJP
+/// 最后修改日期：2020/7/1 8:48:26 
+/// 版本号      ：V1.0.0.0
+/// 机器名称    ：
+/// </summary>
 namespace ComputerInfo
 {
     public partial class Form1 : Form
@@ -52,6 +61,22 @@ namespace ComputerInfo
             {
                 MessageBox.Show(ex.ToString());
             }
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void contextMenuStrip1_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thread th = new Thread(delegate () { new About().ShowDialog(); });
+            th.Start();
 
         }
 
