@@ -28,21 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(174, 188);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(71, 12);
-            this.linkLabel2.TabIndex = 7;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "exe文件地址";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel1
             // 
@@ -73,7 +61,6 @@
             this.ClientSize = new System.Drawing.Size(421, 242);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.linkLabel2);
             this.Name = "About";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About";
@@ -84,8 +71,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel3;
     }
