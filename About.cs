@@ -32,5 +32,10 @@ namespace ComputerInfo
         {
 
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://github.com/RookieBoy666?tab=repositories");
+        }
     }
 }

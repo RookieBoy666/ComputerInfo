@@ -58,12 +58,13 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(163, 115);
+            this.linkLabel3.Location = new System.Drawing.Point(180, 115);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(95, 12);
+            this.linkLabel3.Size = new System.Drawing.Size(65, 12);
             this.linkLabel3.TabIndex = 9;
             this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Designed By ZJP";
+            this.linkLabel3.Text = "源代码下载";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // About
             // 
@@ -74,6 +75,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.linkLabel2);
             this.Name = "About";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About";
             this.Load += new System.EventHandler(this.About_Load);
             this.ResumeLayout(false);
