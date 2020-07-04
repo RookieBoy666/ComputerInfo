@@ -15,22 +15,22 @@ namespace ComputerInfo
 
             q = Convert.ToDouble(computer.GetTotalPhysicalMemory()) / 1024 / 1024 / 1024;
             try {
-                 aaa = computer.GetComputerName() + "\r\n" +
-                     "产商信息:      " + computer.getCorporation() + "\r\n" +
-                         "系统：" + computer.GetSystemType() + "\r\n" +
-                   "磁盘: " + "固态：" + computer.getDisk() + "\r\n" +
-                   "IP：" + computer.GetIPAddress() + "\r\n" +
-                   "CPU序列号：" + computer.CpuID + "   " +
-                   "CPU型号：" + computer.getCpuName() + "\r\n" +
+                aaa = computer.GetComputerName() + "\r\n" +
+                    "产商信息:      " + computer.getCorporation() + "\r\n" +
+                   "系统：" + computer.GetSystemType() + "\r\n" +
+                  "磁盘: " + "固态：" + computer.getDisk() + "\r\n" +
+                  "IP：" + computer.GetIPAddress() + "\r\n" +
+                  "CPU序列号：" + computer.CpuID + "   " +
+                  "CPU型号：" + computer.getCpuName() + "\r\n" +
 
-                   "MAC地址:" + computer.MacAddress + "\r\n" +
+                  "MAC地址:" + computer.MacAddress + "\r\n" +
 
 
-                    "内存：" + q.ToString().Substring(0, 4) + "G   " +
-                   computer.getPhysicalMemory() + "\r\n" +
+                   "内存：" + q.ToString().Substring(0, 4) + "G   " +
+                  computer.getPhysicalMemory() + "\r\n" +
 
-                   "显卡：" + computer.getDisplay()+
-                    System.Windows.Forms.Application.ProductVersion.ToString();
+                  "显卡：" + computer.getDisplay();
+                  //  System.Windows.Forms.Application.ProductVersion.ToString();
             }
             catch(Exception ex)
             {
