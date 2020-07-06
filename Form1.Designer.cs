@@ -54,6 +54,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(850, 249);
             this.textBox1.TabIndex = 1;
+            this.textBox1.SizeChanged += new System.EventHandler(this.textBox1_SizeChanged);
             // 
             // button2
             // 
@@ -95,6 +96,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "系统信息";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

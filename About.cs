@@ -18,24 +18,22 @@ namespace ComputerInfo
             InitializeComponent();
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("explorer.exe", "https://github.com/RookieBoy666/MyPCTool");
-        }
+ 
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("explorer.exe", "https://github.com/RookieBoy666?tab=repositories"); 
+            System.Diagnostics.Process.Start("explorer.exe", "https://github.com/RookieBoy666"); 
         }
 
         private void About_Load(object sender, EventArgs e)
         {
-
+            this.MaximizeBox = false;
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("explorer.exe", "https://github.com/RookieBoy666/ComputerInfo");
+      
+            System.Diagnostics.Process.Start("explorer.exe", "  https://github.com/RookieBoy666/ComputerInfo");
         }
     }
 }

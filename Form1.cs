@@ -13,8 +13,10 @@ using System.Windows.Forms;
 /// </summary>
 namespace ComputerInfo
 {
+  
     public partial class Form1 : Form
     {
+        AutoSizeFormClass asc = new AutoSizeFormClass();
         public Form1()
         {
             InitializeComponent();
@@ -66,6 +68,9 @@ namespace ComputerInfo
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // this.MaximizeBox = false;
+           
+            asc.controllInitializeSize(this);
         }
 
         private void contextMenuStrip1_Opening(object sender, System.ComponentModel.CancelEventArgs e)
@@ -78,6 +83,16 @@ namespace ComputerInfo
             Thread th = new Thread(delegate () { new About().ShowDialog(); });
             th.Start();
 
+        }
+
+        private void textBox1_SizeChanged(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            asc.controlAutoSize(this);
         }
 
         //public string getVersion()
